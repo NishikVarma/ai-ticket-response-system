@@ -4,6 +4,25 @@ Web app to manage support tickets. On creation, a local ML model predicts a one-
 with RAG over a local knowledge base expands it into a customer-friendly reply the agent can review and edit.
 Everything runs locally: no cloud AI APIs.
 
+## Screenshots
+
+**Ticket list** with the predicted one-line solution per ticket.
+
+![Ticket list](screenshots/ticket-list.png)
+
+**Ticket detail**: custom fields, predicted solution with confidence, the draft from the local LLM, and the editable
+final response.
+
+![Ticket detail](screenshots/ticket-detail.png)
+
+**Custom fields** defined at runtime.
+
+![Custom fields](screenshots/custom-fields.png)
+
+**Validation** of required core and custom fields.
+
+![Validation errors](screenshots/validation.png)
+
 ## Architecture
 
 ```
