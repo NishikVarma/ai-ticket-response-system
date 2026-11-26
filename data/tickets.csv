@@ -1,0 +1,81 @@
+subject,description,solution
+Unable to log in,I forgot my password and cannot access my account.,Reset the password using the account recovery process.
+Password not working,My password is rejected every time I try to sign in.,Reset the password using the account recovery process.
+Locked out of account,I tried too many times and now I can't login to my profile.,Reset the password using the account recovery process.
+Can't sign in,I don't remember my login password and need access to my account.,Reset the password using the account recovery process.
+Login problem,The system says my credentials are invalid when I try to log in.,Reset the password using the account recovery process.
+Forgot password,Please help me get back into my account I lost my password.,Reset the password using the account recovery process.
+Account access,I am unable to access my account because the password is wrong.,Reset the password using the account recovery process.
+Reset link missing,I requested a password reset but never got the email.,Reset the password using the account recovery process.
+Charged twice,I was billed two times for the same order this month.,Refund the duplicate charge and confirm it with the billing team.
+Double payment,My credit card shows a duplicate charge for one purchase.,Refund the duplicate charge and confirm it with the billing team.
+Wrong amount billed,I was charged twice the amount I should have paid.,Refund the duplicate charge and confirm it with the billing team.
+Duplicate transaction,Two identical payments were taken from my bank account.,Refund the duplicate charge and confirm it with the billing team.
+Billing error,There are two charges on my statement for a single invoice.,Refund the duplicate charge and confirm it with the billing team.
+Overcharged,I see the same payment twice on my card statement.,Refund the duplicate charge and confirm it with the billing team.
+Payment taken twice,My account was debited two times for one subscription renewal.,Refund the duplicate charge and confirm it with the billing team.
+Extra charge,I think I was billed again for an order I already paid for.,Refund the duplicate charge and confirm it with the billing team.
+Order is late,My package has not arrived and it is past the delivery date.,Check the order tracking status and contact the carrier if delayed.
+Where is my parcel,I ordered a week ago and the shipment still hasn't shown up.,Check the order tracking status and contact the carrier if delayed.
+Shipping delay,The tracking page has not updated for several days.,Check the order tracking status and contact the carrier if delayed.
+Delivery not received,The courier marked my order as delivered but I got nothing.,Check the order tracking status and contact the carrier if delayed.
+Package stuck,My shipment seems stuck in transit and has not moved.,Check the order tracking status and contact the carrier if delayed.
+Late delivery,I was promised delivery by Monday and it still has not come.,Check the order tracking status and contact the carrier if delayed.
+Track my order,I need to know where my order is because it is overdue.,Check the order tracking status and contact the carrier if delayed.
+Missing shipment,My order never arrived at my address.,Check the order tracking status and contact the carrier if delayed.
+Want to return item,I would like to send back a product and get my money back.,Start a return through the returns portal to receive a refund.
+Refund request,The product did not fit and I want a refund.,Start a return through the returns portal to receive a refund.
+Return process,How do I return something I bought last week?,Start a return through the returns portal to receive a refund.
+Return an order,I changed my mind and want to return my purchase for a refund.,Start a return through the returns portal to receive a refund.
+Money back,I am not satisfied with the item and need to return it.,Start a return through the returns portal to receive a refund.
+Send item back,Please tell me how to return this product for a refund.,Start a return through the returns portal to receive a refund.
+Return label,I need a return label to send my purchase back.,Start a return through the returns portal to receive a refund.
+Refund for unused product,I never opened the product and want to return it for my money.,Start a return through the returns portal to receive a refund.
+App keeps crashing,The mobile app closes immediately after I open it.,Update to the latest app version and reinstall if the crash persists.
+App freezes,The application freezes on the home screen and stops responding.,Update to the latest app version and reinstall if the crash persists.
+Crash on launch,Every time I start the app it crashes right away.,Update to the latest app version and reinstall if the crash persists.
+Software bug,The app shows an error and shuts down when I tap settings.,Update to the latest app version and reinstall if the crash persists.
+App not opening,The app won't open on my phone anymore.,Update to the latest app version and reinstall if the crash persists.
+Unexpected shutdown,The program quits unexpectedly while I am using it.,Update to the latest app version and reinstall if the crash persists.
+App error after update,Since the last update the app crashes constantly.,Update to the latest app version and reinstall if the crash persists.
+Black screen,The app displays a blank screen and then closes.,Update to the latest app version and reinstall if the crash persists.
+Cancel subscription,I want to stop my monthly plan.,Cancel the subscription from account settings under Billing.
+Stop renewal,Please cancel my subscription so it does not renew.,Cancel the subscription from account settings under Billing.
+End membership,I no longer need the service and want to cancel my plan.,Cancel the subscription from account settings under Billing.
+Unsubscribe,How can I cancel my paid subscription?,Cancel the subscription from account settings under Billing.
+Cancel my plan,I would like to terminate my membership before the next billing date.,Cancel the subscription from account settings under Billing.
+Stop auto renew,Turn off automatic renewal for my subscription.,Cancel the subscription from account settings under Billing.
+Close subscription,I want to discontinue my premium subscription.,Cancel the subscription from account settings under Billing.
+Cancellation,Please help me cancel the plan I signed up for.,Cancel the subscription from account settings under Billing.
+Change email address,I need to update the email on my account.,Update account details from the profile settings page.
+Update phone number,My phone number changed and I need to edit it in my profile.,Update account details from the profile settings page.
+Wrong name on account,My name is misspelled and I want to correct it.,Update account details from the profile settings page.
+Change address,I moved and need to update my address on file.,Update account details from the profile settings page.
+Edit profile,How do I modify my personal details in my account?,Update account details from the profile settings page.
+New email,Please change the email address linked to my profile.,Update account details from the profile settings page.
+Update my details,I want to change my contact information.,Update account details from the profile settings page.
+Profile information,My account has my old phone number and address.,Update account details from the profile settings page.
+Lost 2FA device,I lost my phone and cannot get the verification code.,Reset two-factor authentication using backup codes or identity verification.
+Two-factor not working,The authentication code is never accepted when I log in.,Reset two-factor authentication using backup codes or identity verification.
+2FA problem,I got a new phone and can't pass the two-factor check.,Reset two-factor authentication using backup codes or identity verification.
+Authenticator app lost,I deleted my authenticator app and am locked out.,Reset two-factor authentication using backup codes or identity verification.
+Verification code issue,I do not receive the security code for two-step verification.,Reset two-factor authentication using backup codes or identity verification.
+Disable 2FA,I can't use my second factor anymore and need to turn it off.,Reset two-factor authentication using backup codes or identity verification.
+Backup codes,I need help using backup codes for two-factor login.,Reset two-factor authentication using backup codes or identity verification.
+MFA locked,Multi-factor authentication blocks me since my device was stolen.,Reset two-factor authentication using backup codes or identity verification.
+Item arrived broken,The product I received is cracked and damaged.,Send photos of the damaged item to receive a replacement.
+Damaged package,My order came damaged and does not work.,Send photos of the damaged item to receive a replacement.
+Defective product,The item I got is faulty and broken out of the box.,Send photos of the damaged item to receive a replacement.
+Broken on arrival,The screen was smashed when the parcel arrived.,Send photos of the damaged item to receive a replacement.
+Wrong condition,I received a scratched and dented product.,Send photos of the damaged item to receive a replacement.
+Need replacement,My item arrived broken and I would like a new one.,Send photos of the damaged item to receive a replacement.
+Product damaged in transit,The box was crushed and the product inside is damaged.,Send photos of the damaged item to receive a replacement.
+Faulty item,What do I do about a damaged product I just received?,Send photos of the damaged item to receive a replacement.
+Need invoice,I need a copy of my invoice for accounting.,Download the invoice from the billing history page.
+Receipt request,Can you send me the receipt for my last payment?,Download the invoice from the billing history page.
+Invoice download,Where can I get a PDF invoice for my purchase?,Download the invoice from the billing history page.
+Tax invoice,I need an invoice with my company details for tax purposes.,Download the invoice from the billing history page.
+Past invoices,I want to see and download my previous invoices.,Download the invoice from the billing history page.
+Proof of payment,I require a payment receipt for my records.,Download the invoice from the billing history page.
+Billing statement,Please provide the invoice for my subscription payment.,Download the invoice from the billing history page.
+Missing receipt,I never received a receipt for my order.,Download the invoice from the billing history page.

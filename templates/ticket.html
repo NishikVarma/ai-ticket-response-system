@@ -1,0 +1,36 @@
+{% extends "base.html" %}{% block body %}
+<h2>{% if new %}New ticket{% else %}Ticket #{{ ticket.id }}{% endif %}</h2>
+<form method="post" action="{{ '/tickets' if new else '/tickets/' ~ ticket.id }}">
+{% macro err(k) %}{% if errors.get(k) %}<span class="err">{{ errors[k] }}</span>{% endif %}{% endmacro %}
+<label>Customer name <input type="text" name="customer_name" value="{{ ticket.customer_name or '' }}"> {{ err('customer_name') }}</label>
+<label>Subject <input type="text" name="subject" value="{{ ticket.subject or '' }}"> {{ err('subject') }}</label>
+<label>Description <textarea name="description" rows="4">{{ ticket.description or '' }}</textarea> {{ err('description') }}</label>
+<label>Category <select name="category">{% for c in categories %}<option {{ 'selected' if c == ticket.category }}>{{ c }}</option>{% endfor %}</select></label>
+<label>Priority <select name="priority">{% for p in priorities %}<option {{ 'selected' if p == ticket.priority }}>{{ p }}</option>{% endfor %}</select></label>
+{% if not new %}<label>Status <select name="status">{% for s in statuses %}<option {{ 'selected' if s == ticket.status }}>{{ s }}</option>{% endfor %}</select></label>{% endif %}
+
+{% for f in fields %}{% set k = 'field_' ~ f.id %}{% set v = values.get(f.id|string, '') %}
+<label>{{ f.label }}{{ ' *' if f.required }}
+{% if f.type == 'text' %}<input type="text" name="{{ k }}" value="{{ v }}">
+{% elif f.type == 'number' %}<input type="number" step="any" name="{{ k }}" value="{{ v }}">
+{% elif f.type == 'date' %}<input type="date" name="{{ k }}" value="{{ v }}">
+{% elif f.type == 'dropdown' %}<select name="{{ k }}"><option value=""></option>{% for o in f.options.split(',') %}<option {{ 'selected' if o.strip() == v }}>{{ o.strip() }}</option>{% endfor %}</select>
+{% elif f.type == 'checkbox' %}<input type="checkbox" name="{{ k }}" value="1" {{ 'checked' if v == '1' }}>{% endif %}
+{{ err(k) }}</label>
+{% endfor %}
+
+{% if not new %}
+<h3>AI assistance</h3>
+{% if ticket.ai_error %}<div class="warn">{{ ticket.ai_error }}</div>{% endif %}
+<b>Predicted one-line solution</b>{% if ticket.prediction_confidence is not none %} (confidence {{ '%.0f'|format(ticket.prediction_confidence * 100) }}%){% endif %}
+<div class="box">{{ ticket.predicted_solution or 'None' }}</div>
+<b>AI draft response</b><div class="box">{{ ticket.ai_response or 'None' }}</div>
+<label>Final response (review / edit before sending)
+<textarea name="final_response" rows="8">{{ ticket.final_response or ticket.ai_response or '' }}</textarea></label>
+{% endif %}
+<button>{{ 'Create ticket' if new else 'Save changes' }}</button>
+</form>
+{% if not new %}
+<form class="inline" method="post" action="/tickets/{{ ticket.id }}/regenerate"><button>Regenerate AI response</button></form>
+<form class="inline" method="post" action="/tickets/{{ ticket.id }}/delete" onsubmit="return confirm('Delete this ticket?')"><button>Delete ticket</button></form>
+{% endif %}{% endblock %}

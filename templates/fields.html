@@ -1,0 +1,14 @@
+{% extends "base.html" %}{% block body %}
+<h2>Custom ticket fields</h2>
+<p>Fields added here appear on the ticket form immediately; no database change needed.</p>
+{% if error %}<div class="err">{{ error }}</div>{% endif %}
+<table><tr><th>Label</th><th>Type</th><th>Required</th><th>Options</th><th></th></tr>
+{% for f in fields %}<tr><td>{{ f.label }}</td><td>{{ f.type }}</td><td>{{ 'yes' if f.required else 'no' }}</td><td>{{ f.options }}</td>
+<td><form class="inline" method="post" action="/fields/{{ f.id }}/delete"><button>Remove</button></form></td></tr>{% endfor %}</table>
+<h3>Add field</h3>
+<form method="post" action="/fields">
+<label>Label <input type="text" name="label"></label>
+<label>Type <select name="type">{% for t in types %}<option>{{ t }}</option>{% endfor %}</select></label>
+<label>Options (dropdown only, comma separated) <input type="text" name="options"></label>
+<label><input type="checkbox" name="required" value="1"> Required</label>
+<button>Add field</button></form>{% endblock %}

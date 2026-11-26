@@ -1,0 +1,8 @@
+{% extends "base.html" %}{% block body %}
+<h2>Tickets</h2>
+{% if message %}<div class="warn">{{ message }}</div>{% endif %}
+{% if not tickets %}<p>No tickets yet.</p>{% else %}
+<table><tr><th>ID</th><th>Customer</th><th>Subject</th><th>Priority</th><th>Status</th><th>Predicted solution</th></tr>
+{% for t in tickets %}<tr><td><a href="/tickets/{{ t.id }}">#{{ t.id }}</a></td><td>{{ t.customer_name }}</td>
+<td>{{ t.subject }}</td><td>{{ t.priority }}</td><td>{{ t.status }}</td><td>{{ t.predicted_solution or '—' }}</td></tr>{% endfor %}
+</table>{% endif %}{% endblock %}
